@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux'
+import {applyMiddleware, createStore} from "redux";
+import ReduxThunk from 'redux-thunk';
+import '@babel/polyfill'
 
-const root = ReactDOM.createRoot(document.getElementById('app'));
-root.render(
+import reducers from "./store/reducers";
+import AppRouter from "./AppRouter";
+
+//import Swiper
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+// Import main sass file to apply global styles
+import './static/sass/style.scss'
+
+const store = createStore(reducers, applyMiddleware(ReduxThunk))
+
+const app = (
   <React.StrictMode>
-    <App />
+      <Provider store={store}>
+        <AppRouter />
+      </Provider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(app, document.getElementById('app'))
