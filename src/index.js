@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import {Provider} from 'react-redux'
 import {applyMiddleware, createStore} from "redux";
 import ReduxThunk from 'redux-thunk';
-import '@babel/polyfill'
 
 import reducers from "./store/reducers";
 import AppRouter from "./AppRouter";
@@ -17,12 +16,11 @@ import './static/sass/style.scss'
 
 const store = createStore(reducers, applyMiddleware(ReduxThunk))
 
-const app = (
+const root = ReactDOM.createRoot(document.getElementById('app'))
+root.render(
   <React.StrictMode>
       <Provider store={store}>
         <AppRouter />
       </Provider>
   </React.StrictMode>
 );
-
-ReactDOM.render(app, document.getElementById('app'))
