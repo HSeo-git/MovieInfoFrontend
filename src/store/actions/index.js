@@ -1,0 +1,1 @@
+export const MY_ACTION_TYPE = 'FETCH_TRENDING'
