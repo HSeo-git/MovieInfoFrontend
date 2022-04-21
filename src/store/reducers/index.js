@@ -1,8 +1,16 @@
 import {combineReducers} from "redux";
-import MyReducer from "./myReducer";
+import LeagueOfLegendReducer from './reducerLeagueOfLegend'
+import BattleGroundReducer from './reducerBattleGround'
+import OverwatchReducer from './reducerOverwatch'
+import GameDetailsReducer from './reducerGameDetails'
+import SearchGameReducer from './reducerSearchGame'
 
 const rootReducer = combineReducers({
-    myReducer: MyReducer
+    leagueOfLegend: LeagueOfLegendReducer,
+    battleGround: BattleGroundReducer,
+    overwatch: OverwatchReducer,
+    gameDetails: GameDetailsReducer,
+    searchGame: SearchGameReducer,
 })
 
 export default rootReducer
