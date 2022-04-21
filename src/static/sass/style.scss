@@ -1,3 +1,15 @@
 @import 'abstracts/function';
 @import 'abstracts/variables';
+
+@import 'base/base';
+
+@import 'components/backdrop';
+@import 'components/modal';
+@import 'components/search';
+@import 'components/game';
+@import 'components/gameShowcase';
+@import 'components/notfound';
+
+@import 'layout/footer';
+@import 'layout/header';
 @import 'layout/navigation';
