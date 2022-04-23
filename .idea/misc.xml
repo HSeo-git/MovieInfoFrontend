@@ -4,36 +4,40 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="278" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/UI/ModalGameDetails.js" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="851" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/MainContent.js" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1268" />
+          <option name="caretOffset" value="556" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/Navbar.js" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="170" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/src/static/sass/layout/_navigation.scss" />
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="0" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/src/pages/NotFound.js" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="514" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/src/pages/Home.js" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="892" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/src/store/actions/index.js" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="531" />
+          <option name="caretOffset" value="41" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/Header.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/UI/Modal.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/UI/Backdrop.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/DisplayGameRow.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="254" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/DropdownContent.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1624" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/components/VideoPlay.js" />
         </OpenedFileInfo>
       </list>
     </option>
