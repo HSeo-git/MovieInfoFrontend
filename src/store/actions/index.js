@@ -19,11 +19,11 @@ export const fetchGameDetails = (gameType, gameId) => {
             dispatch({ type: FETCH_GAME_DETAILS })
             const response = {
                 data: {
-                    title: gameType,
+                    title: "Game Coaching",
                     name: gameId,
                     vote_average: "myVoteAvg",
                     release_date: "my_release_date",
-                    overview: "myOverView",
+                    overview: "League of Legend",
                 }
             }
             dispatch({ type: FETCH_GAME_DETAILS_SUCCESS, payload: response })

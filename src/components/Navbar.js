@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import {useScroll} from "../hooks/useScroll";
 import { ReactComponent as SearchLogo } from '../static/images/icon-search.svg'
-import Logo from '../static/images/logo-lesson-match.png'
+import Logo from '../static/images/logo-lesson-match.PNG'
 import { ReactComponent as Bell } from '../static/images/icon-bell.svg'
 import { ReactComponent as DropdownArrow } from '../static/images/icon-dropDown.svg'
 import DropdownContent from "./DropdownContent";

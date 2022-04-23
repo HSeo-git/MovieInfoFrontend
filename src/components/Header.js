@@ -19,18 +19,18 @@ const Header = ({ game : { title, overview }}) => {
             volume={1}
             muted={isMuted}
             className='header__video'
-            url = 'https://www.youtube.com/watch?v=G5WUsX7ulq8'
-            />
+            url = "https://www.youtube.com/embed/mDYqT0_9VR4"
+            controls />
             <h1 className='header__container-heading'>{title}</h1>
             <button
                 onClick={()=> alert('Are you ready to learn?')}
                 className='header__container-btnPlay'>
                 <PlayLogo className='header__container-btnMyList-play'/>
-                Play
+                List
             </button>
             <button className='header__container-btnMyList'>
                 <AddLogo className='header__container-btnMyList-add'/>
-                My List
+                My Lessons
             </button>
 
             {isMuted ? (
