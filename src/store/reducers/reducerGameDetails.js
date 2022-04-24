@@ -17,9 +17,6 @@ export default function gameDetails (state = initialState, action) {
             return {...state, isLoading: false}
         case FETCH_GAME_DETAILS_SUCCESS:
             const gameDetails = action.payload.data
-            console.log("Dispatching...")
-            console.log(action.payload)
-            console.log(gameDetails)
             return {...state, gameDetails, isLoading: false}
         default:
             return state

@@ -3,16 +3,16 @@ import React from 'react'
 import {ReactComponent as AddIcon} from "../../static/images/icon-add.svg";
 import {ReactComponent as PlayIcon} from "../../static/images/icon-play.svg"
 
-const GameDetails = ({
-      game: {
-          title,
+const ModalMovieDetails = ({
+      movie: {
+          name,
           vote_average,
           overview,
       },
   }) => {
     return (
         <div className='modal__container'>
-            <h1 className='modal__title'>{title}</h1>
+            <h1 className='modal__title'>{name}</h1>
             <p className='modal__info'>
                 <span className='modal__rating'>Rating: {vote_average * 10}% </span>
             </p>
@@ -29,4 +29,4 @@ const GameDetails = ({
     )
 }
 
-export default GameDetails
+export default ModalMovieDetails
