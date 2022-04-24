@@ -5,13 +5,13 @@ import {ReactComponent as UnmuteIcon} from "../static/images/icon-unmute.svg";
 
 const VideoPlay = () => {
     const playList = [
-        "https://www.youtube.com/embed/aR-KAldshAE",
-        "https://www.youtube.com/embed/3VTkBuxU4yk",
-        "https://www.youtube.com/embed/F5tSoaJ93ac",
-        "https://www.youtube.com/embed/zF5Ddo9JdpY",
-        "https://www.youtube.com/embed/TFzkbos0oeo",
-        "https://www.youtube.com/embed/wkihKQ7Exvo",
-        "https://www.youtube.com/embed/5-mT9D4fdgQ"
+        "https://www.youtube.com/embed/OVMu1s0nZNQ",
+        "https://www.youtube.com/embed/DSEfRVqjbFA",
+        "https://www.youtube.com/embed/Xojsvie3UpM",
+        "https://www.youtube.com/embed/h3rKe6DdC18",
+        "https://www.youtube.com/embed/WTR5snCDDes",
+        "https://www.youtube.com/embed/06Ws-x_Z6bI",
+        "https://www.youtube.com/embed/j3gF0CZfp8Y"
     ];
     const [isMuted, setIsMuted] = useState(true)
     return (
@@ -28,7 +28,7 @@ const VideoPlay = () => {
                 width='100%'
                 height='100%'
                 className='header__video'
-                />
+            />
             {isMuted ? (
                 <MuteIcon
                     onClick={() => setIsMuted(false)}

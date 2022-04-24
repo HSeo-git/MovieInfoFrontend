@@ -19,11 +19,11 @@ export const fetchGameDetails = (gameType, gameId) => {
             dispatch({ type: FETCH_GAME_DETAILS })
             const response = {
                 data: {
-                    title: "Game Coaching",
-                    name: gameId,
-                    vote_average: "myVoteAvg",
-                    release_date: "my_release_date",
-                    overview: "League of Legend",
+                    title: "Movie", //(shown on the above a video)It should be drawn from the server
+                    name: "movie name", //It should be drawn from the server
+                    vote_average: "myVoteAvg", //It should be drawn from the server
+                    release_date: "my_release_date", //It should be drawn from the server
+                    overview: "overview", //(shown on the above a video)It should be drawn from the server
                 }
             }
             dispatch({ type: FETCH_GAME_DETAILS_SUCCESS, payload: response })
