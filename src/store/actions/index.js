@@ -1,7 +1,7 @@
-import axios from "axios";
-
 //games
-export const FETCH_LEAGUE_OF_LEGEND = 'FETCH_LEAGUE_OF_LEGEND'
+import axios from "../../axios-movies";
+
+export const FETCH_ROMANTIC_MOVIES = 'FETCH_LEAGUE_OF_LEGEND'
 export const FETCH_BATTLE_GROUND = 'FETCH_BATTLE_GROUND'
 export const FETCH_OVERWATCH = 'FETCH_OVERWATCH'
 //game details
@@ -12,6 +12,9 @@ export const FETCH_GAME_DETAILS_FAIL = 'FETCH_GAME_DETAILS_FAIL'
 export const FETCH_SEARCH_GAME = 'FETCH_SEARCH_GAME'
 export const FETCH_SEARCH_GAME_FAIL = 'FETCH_SEARCH_GAME_FAIL'
 export const FETCH_SEARCH_GAME_SUCCESS = 'FETCH_SEARCH_GAME_SUCCESS'
+
+// netflix
+export const FETCH_NETFLIX_ORIGINALS = "FETCH_NETFLIX_ORIGINALS"
 
 export const fetchGameDetails = (gameType, gameId) => {
     return async (dispatch) => {
@@ -34,6 +37,19 @@ export const fetchGameDetails = (gameType, gameId) => {
     }
 }
 
+export const fetchNetflixOriginals = () => {
+    return async (dispatch) => {
+        try {
+            const request = await axios.get(
+                `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`
+            )
+            dispatch({type: FETCH_NETFLIX_ORIGINALS, payload: request})
+        } catch (error) {
+            console.log('error', error)
+        }
+    }
+}
+
 export const fetchSearchGame = (searchTerm) => {
     return async (dispatch) => {
         try {
@@ -49,14 +65,17 @@ export const fetchSearchGame = (searchTerm) => {
     }
 }
 
-export const fetchLegueOfLegend = () => {
+export const fetchRomanticMovies = () => {
     return async (dispatch) => {
         try {
-            const request = await axios.get(
-                `/discover/roll_playing?api_key=${process.env.API_KEY}&with_networks=213`
-            )
+            // TODO:: Get a movie from server, currently set dummy data.
+            const request = {
+                results: {
 
-            dispatch({ type: FETCH_LEAGUE_OF_LEGEND, payload: request })
+                }
+            }
+
+            dispatch({ type: FETCH_ROMANTIC_MOVIES, payload: request })
         } catch (error) {
             console.log('error', error)
         }
