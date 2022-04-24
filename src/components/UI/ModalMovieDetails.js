@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import {ReactComponent as AddIcon} from "../../static/images/icon-add.svg";
 import {ReactComponent as PlayIcon} from "../../static/images/icon-play.svg"
 
@@ -28,5 +29,5 @@ const ModalMovieDetails = ({
         </div>
     )
 }
-
 export default ModalMovieDetails
+

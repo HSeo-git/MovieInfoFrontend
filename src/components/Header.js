@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import {ReactComponent as PlayLogo} from "../static/images/icon-play.svg";
 import {ReactComponent as AddLogo} from "../static/images/icon-add.svg";
@@ -12,14 +12,14 @@ const Header = ({ game : { title, overview }}) => {
             <VideoPlay/>
             <h1 className='header__container-heading'>{title}</h1>
             <button
-                onClick={()=> alert('Are you ready to play?')}
+                onClick={()=> alert("Let's find the details of the movie")}
                 className='header__container-btnPlay'>
                 <PlayLogo className='header__container-btnMyList-play'/>
-                List
+                Play
             </button>
             <button className='header__container-btnMyList'>
                 <AddLogo className='header__container-btnMyList-add'/>
-                My Lessons
+                My List
             </button>
             )}
             <p className='header__container-overview'>{overview}</p>

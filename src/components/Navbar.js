@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 import {useScroll} from "../hooks/useScroll";
-import { ReactComponent as SearchLogo } from '../static/images/icon-search.svg'
-import Logo from '../static/images/logo-lesson-match.PNG'
+import { ReactComponent as SearchLogo } from '../static/images/icon-find.svg'
+import Logo from '../static/images/Hagom-Logo.png'
 import { ReactComponent as Bell } from '../static/images/icon-bell.svg'
 import { ReactComponent as DropdownArrow } from '../static/images/icon-dropDown.svg'
 import DropdownContent from "./DropdownContent";
@@ -46,9 +46,9 @@ const Navbar = () => {
                 </NavLink>
                 <DropdownArrow className='navigation__container--downArrow-2'/>
                 <div className='navigation__container-link pseudo-link'>Home</div>
-                <div className='navigation__container-link pseudo-link'>League of Legend</div>
-                <div className='navigation__container-link pseudo-link'>Battle Ground</div>
-                <div className='navigation__container-link pseudo-link'>Overwatch</div>
+                <div className='navigation__container-link pseudo-link'>Soap opera</div>
+                <div className='navigation__container-link pseudo-link'>Movies</div>
+                <div className='navigation__container-link pseudo-link'>To be released</div>
                 <div className='navigation__container-link pseudo-link'>My List</div>
 
                 <div className='navigation__container--left'>
