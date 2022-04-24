@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 
 import MainContent from "../components/MainContent";
 import Modal from "../components/UI/Modal";
-import ModalGameDetails from "../components/UI/ModalGameDetails";
+import ModalMovieDetails from "../components/UI/ModalMovieDetails";
 
 const Home = () => {
     const [toggleModal, setToggleModal] = useState(false)
-    const [gameDetails, setGameDetails] = useState({})
+    const [movieDetails, setMovieDetails] = useState({})
 
-    const selectGameHandler = async (game) => {
+    const selectMovieHandler = async (movie) => {
         setToggleModal(true)
-        setGameDetails(game)
+        setMovieDetails(movie)
     }
 
     const closeModal = () => {
@@ -20,14 +20,14 @@ const Home = () => {
     return (
         <>
             <div className='main-content'>
-                <MainContent selectGameHandler={selectGameHandler}/>
+                <MainContent selectMovieHandler={selectMovieHandler}/>
             </div>
             <Modal
                 show={toggleModal}
                 modalClosed={closeModal}
-                backgroundImage={gameDetails.backdrop_path || gameDetails.poster_path}
+                backgroundImage={movieDetails.backdrop_path || movieDetails.poster_path}
             >
-                <ModalGameDetails game={gameDetails} />
+                <ModalMovieDetails movie={movieDetails} />
             </Modal>
         </>
     );

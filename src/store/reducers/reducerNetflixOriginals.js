@@ -1,8 +1,8 @@
-import {FETCH_ROMANTIC_MOVIES} from "../actions";
+import { FETCH_NETFLIX_ORIGINALS } from "../actions";
 
-export default function reducerLeagueOfLegend(state = {}, action) {
+export default function reducerNetflixOriginals(state = {}, action) {
     switch (action.type) {
-        case FETCH_ROMANTIC_MOVIES:
+        case FETCH_NETFLIX_ORIGINALS:
             const data = action.payload.data.results;
             return {...state, data}
         default:

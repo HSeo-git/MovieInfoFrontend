@@ -3,39 +3,29 @@ import { useDispatch, useSelector } from "react-redux";
 import * as gameActions from '../store/actions'
 
 import Header from "./Header";
-import DisplayGameRow from "./DisplayGameRow";
+import DisplayRow from "./DisplayRow";
 
-const MainContent = ( {selectGameHandler} ) => {
+const MainContent = ( {selectMovieHandler} ) => {
+    const netflixOriginals = useSelector((state) => state.netflixOriginals)
     const { gameDetails } = useSelector((state) => state.gameDetails)
-    const leagueOfLegend = useSelector((state) => state.leagueOfLegend)
-    const battleGround = useSelector((state)=>state.battleGround)
-    const overwatch = useSelector((state) => state.overwatch)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(gameActions.fetchGameDetails('game', '63351'))
-        dispatch(gameActions.fetchLegueOfLegend())
+        dispatch(gameActions.fetchNetflixOriginals())
         dispatch(gameActions.fetchBattleGround())
         dispatch(gameActions.fetchOverwatch())
         }, [dispatch])
     return (
         <div className='container'>
             <Header game={gameDetails}/>
-            <div className='gameShowcase'>
-                <DisplayGameRow
-                    isgame={true}
-                    title='League Of Legend'
-                    selectGameHandler={selectGameHandler}
-                    games={leagueOfLegend.data}/>
-                <DisplayGameRow
-                    title='Battle Ground'
-                    selectGameHandler={selectGameHandler}
-                    games={battleGround.data}/>
-                <DisplayGameRow
-                    title='Overwatch'
-                    selectGameHandler={selectGameHandler}
-                    games={overwatch.data}/>
+            <div className='movieShowcase'>
+                <DisplayRow
+                    title='Netflix originals'
+                    isNetflixMovies={true}
+                    selectMovieHandler={selectMovieHandler}
+                    movies={netflixOriginals.data}/>
             </div>
         </div>
     );
