@@ -5,12 +5,12 @@ import {ReactComponent as AddLogo} from "../static/images/icon-add.svg";
 
 import VideoPlay from "./VideoPlay";
 
-const Header = ({ game : { title, overview }}) => {
+const Header = () => {
 
     return (
         <header className='header'>
             <VideoPlay/>
-            <h1 className='header__container-heading'>{title}</h1>
+            <h1 className='header__container-heading'>Preview</h1>
             <button
                 onClick={()=> alert("Let's find the details of the movie")}
                 className='header__container-btnPlay'>
@@ -22,7 +22,7 @@ const Header = ({ game : { title, overview }}) => {
                 My List
             </button>
             )}
-            <p className='header__container-overview'>{overview}</p>
+            <p className='header__container-overview'>now and upcoming movies</p>
             <div className='header__container--fadeBottom'></div>
         </header>
     );
