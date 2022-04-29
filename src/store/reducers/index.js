@@ -1,18 +1,26 @@
 import {combineReducers} from "redux";
-import LeagueOfLegendReducer from './reducerLeagueOfLegend'
-import BattleGroundReducer from './reducerBattleGround'
-import OverwatchReducer from './reducerOverwatch'
-import GameDetailsReducer from './reducerGameDetails'
-import SearchGameReducer from './reducerSearchGame'
+import SearchMovieReducer from './reducerSearchMovie'
 import reducerNetflixOriginals from "./reducerNetflixOriginals";
+import MovieDetailsReducer from './reducerMovieDetails'
+import ActionMoviesReducer from './reducerActionMovies'
+import TrendingReducer from './reducerTrending'
+import ComedyMoviesReducer from './reducerComedyMovies'
+import HorrorMoviesReducer from './reducerHorrorMovies'
+import RomanceMoviesReducer from './reducerRomanceMovies'
+import DocumentaryReducer from './reducerDocumentary'
+import TopRatedReducer from './reducerTopRated'
 
 const rootReducer = combineReducers({
-    leagueOfLegend: LeagueOfLegendReducer,
-    battleGround: BattleGroundReducer,
-    overwatch: OverwatchReducer,
-    gameDetails: GameDetailsReducer,
-    searchGame: SearchGameReducer,
+    trending: TrendingReducer,
+    action: ActionMoviesReducer,
     netflixOriginals: reducerNetflixOriginals,
+    searchMovie: SearchMovieReducer,
+    movieDetails: MovieDetailsReducer,
+    comedy: ComedyMoviesReducer,
+    horror: HorrorMoviesReducer,
+    romance: RomanceMoviesReducer,
+    documentary: DocumentaryReducer,
+    topRated: TopRatedReducer,
 })
 
 export default rootReducer
