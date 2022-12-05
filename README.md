@@ -2,7 +2,7 @@
 
 ## For those who want to see various kinds of movies and find the info.
 
-This project is developed with Reactjs.
+This project is developed with ReactJS.
 
 ## Installation
 This project requires [Node.js](https://nodejs.org/) v10+ to run.
