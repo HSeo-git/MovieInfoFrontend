@@ -1,4 +1,5 @@
-# Movie Info Website(Netflix Clone Coding)
+# Movie Info Website
+## (Netflix Clone Coding)
 
 ## For those who want to see various kinds of movies and find the info.
 
